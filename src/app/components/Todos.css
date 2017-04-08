@@ -1,0 +1,51 @@
+.main {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #e6e6e6;
+}
+
+.todo-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &-move {
+    transition: transform 1s;
+  }
+  &-item {
+    transition: all 1s;
+  }
+  &-leave-active {
+    position: absolute;
+  }
+}
+
+.toggle-all {
+  position: absolute;
+  top: -55px;
+  left: -12px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  border: none; /* Mobile Safari */
+  &:before {
+    content: '❯';
+    font-size: 22px;
+    color: #e6e6e6;
+    padding: 10px 27px 10px 27px;
+  }
+  &:checked:before {
+    color: #737373;
+  }
+}
+
+label[for='toggle-all'] {
+  display: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .toggle-all {
+    background: none;
+    transform: rotate(90deg);
+    appearance: none;
+  }
+}
