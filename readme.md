@@ -2,9 +2,10 @@
 
 
 ## 简介
-Vue版本Todo [React版本](https://github.com/huangzenghui/todos)
+Vue版本Todo，还有一个[React版本](https://github.com/huangzenghui/todos)
+
 使用语言：es6  
-后台：koa2 + graphql + mongodb + gulp (ps:mongodb host:localhost, port: 27017) 
+后台：koa2 + graphql + mongodb + gulp (ps:mongodb host:localhost, port: 27017)   
 前端：Vue + Vuex + cssnext + webpack2
 
 ---
